@@ -1,4 +1,21 @@
 .element-container {
-  width: 64px;
-  height: 64px;
+  width: 70px;
+  height: 70px;
+  padding: 0.2em;
+  box-shadow: 0 0 0 1px #000;
+
+  .symbolNumberRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .symbol {
+      font-size: 2em;
+      line-height: 0.9;
+    }
+    .number {
+      font-size: 1em;
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
 }

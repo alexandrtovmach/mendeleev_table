@@ -8,8 +8,8 @@ const Table = () => {
   return (
     <div className={styles.tableContainer}>
       {
-        tableData.map((elementData) => (
-          <Element elData={elementData} />
+        tableData.map((el) => (
+          <Element {...el} />
         ))
       }
     </div>
