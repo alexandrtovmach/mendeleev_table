@@ -1,3 +1,5 @@
+$lantanoidsGapWidth: 5px;
+
 .element-container {
   width: 70px;
   height: 70px;
@@ -37,5 +39,58 @@
         font-weight: bold;
       }
     }
+  }
+
+  &.lanthanum,
+  &.actinium {
+    position: relative;
+    width: calc(70px - #{$lantanoidsGapWidth});
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: -$lantanoidsGapWidth;
+      bottom: 0;
+      width: $lantanoidsGapWidth;
+      outline: 1px solid #000;
+    }
+  }
+
+  &.cerium,
+  &.thorium {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: -$lantanoidsGapWidth - 1;
+      bottom: 0;
+      width: $lantanoidsGapWidth;
+      background-color: inherit;
+      outline: 1px solid #000;
+    }
+  }
+
+  &.cerium {
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: -100%;
+      left: -$lantanoidsGapWidth - 2px;
+      bottom: 100%;
+      width: $lantanoidsGapWidth;
+      border-left: 1px dashed #000;
+      border-right: 1px dashed #000;
+    }
+  }
+
+  &.lanthanum:before {
+    background-color: #c3d9b4;
+  }
+  &.actinium:before {
+    background-color: #9cbd84;
   }
 }
