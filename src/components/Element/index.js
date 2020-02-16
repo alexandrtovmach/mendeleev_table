@@ -2,6 +2,15 @@ import React from "react"
 
 import styles from "./element.module.scss"
 
+const getOxidState = (value) => {
+  if (value === "-") {
+    return 0;
+  } else {
+    const numVal = value * 1;
+    return numVal > 0? `+${value}`: value;
+  }
+}
+
 const Element = ({
   number,
   symbol,
@@ -40,7 +49,7 @@ const Element = ({
       gridColumn: group,
       gridRow: period
     }}>
-      <div className={styles.symbolNumberRow}>
+      <div className={styles.main}>
         <span className={styles.symbol}>
           {symbol}
         </span>
@@ -48,11 +57,24 @@ const Element = ({
           {number}
         </span>
       </div>
-      {/* {Object.keys(elData).map(key => (
-        <p>
-          {key}: {elData[key]}
-        </p>
-      ))} */}
+      <div className={styles.details}>
+        <div className={styles.weightRow}>
+          <span className={styles.weight}>
+            {relativeAtomicWeight}
+          </span>
+          <span className={styles.oxidationState}>
+            {getOxidState(stableOxidationState)}
+          </span>
+        </div>
+        <div className={styles.names}>
+          <p className={styles.mainName}>
+            {rusName}
+          </p>
+          <p className={styles.secondaryName}>
+            {engName}
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
