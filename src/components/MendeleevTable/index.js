@@ -1,15 +1,14 @@
 import React from "react"
 
-import tableData from "../../data/table.json"
 import { Element } from "../"
 import styles from "./table.module.scss"
 
-const Table = () => {
+const Table = ({ elements }) => {
   return (
     <div className={styles.tableContainer}>
       {
-        tableData.map((el) => (
-          <Element {...el} />
+        elements && elements.map(({ node }) => (
+          <Element key={node.id} {...node} />
         ))
       }
     </div>
