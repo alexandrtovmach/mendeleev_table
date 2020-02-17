@@ -29,8 +29,6 @@ const Element = ({
       className={classNames(styles.elementContainer, {
         [styles.lanthanum]: Number(periodicalNumber) === 57,
         [styles.actinium]: Number(periodicalNumber) === 89,
-        [styles.cerium]: Number(periodicalNumber) === 58,
-        [styles.thorium]: Number(periodicalNumber) === 90,
         [styles.semimetal]: isSemimetal,
       })}
       style={{
