@@ -30,7 +30,7 @@ export const query = graphql`
           latName
           meltC
           meltK
-          number
+          periodicalNumber
           outerElectronicConfiguration
           period
           radioactivity

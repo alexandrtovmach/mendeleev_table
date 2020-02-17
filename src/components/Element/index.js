@@ -3,98 +3,45 @@ import classNames from "classnames"
 
 import styles from "./element.module.scss"
 
-const getOxidState = value => {
-  if (value === "-") {
-    return 0
-  } else {
-    const numVal = value * 1
-    return numVal > 0 ? `+${value}` : value
-  }
-}
-
-const getPositionStyles = ({ number, group, period }) => {
-  const isLantanoid = number >= 58 && number <= 71
-  const isActinoid = number >= 90 && number <= 103
-  const groupGap = isLantanoid
-    ? Number(number) - 57
-    : isActinoid
-    ? Number(number) - 89
-    : 0
-  const periodGap = Number(isLantanoid || isActinoid) * 3
-  return {
-    gridColumn: Number(group) + groupGap,
-    gridRow: Number(period) + periodGap,
-  }
-};
-
-const isSemimetal = (number) => {
-	return [5, 14, 32, 33, 51, 52, 84, 85].includes(Number(number));
-};
-
-const getRelativeAtomicWeight = (weight) => {
-	return Number(weight)%1? weight: `[${weight}]`;
-};
-
 const Element = ({
-  number,
+  periodicalNumber,
   symbol,
-  rusName,
-  engName,
-  latName,
-  boilK,
-  meltK,
-  boilC,
-  meltC,
+  mainName,
+  secondaryName,
   relativeAtomicWeight,
-  type,
-  group,
-  period,
-  discoveredAt,
-  discoveredBy,
-  electronegativity,
-  atomicRadius,
-  electronicConfiguration,
-  outerElectronicConfiguration,
-  sort,
+  xPos,
+  yPos,
   stableOxidationState,
-  allOxidationStates,
-  density,
-  firstIonizationPotential,
-  color,
   hexColor,
-  amountInWorld,
-  amountInSeawater,
-  amountInAir,
-  radioactivity,
+  isSemimetal,
 }) => {
   return (
     <div
       className={classNames(styles.elementContainer, {
-        [styles.lanthanum]: Number(number) === 57,
-        [styles.actinium]: Number(number) === 89,
-        [styles.cerium]: Number(number) === 58,
-        [styles.thorium]: Number(number) === 90,
-				[styles.semimetal]: isSemimetal(number)
+        [styles.lanthanum]: Number(periodicalNumber) === 57,
+        [styles.actinium]: Number(periodicalNumber) === 89,
+        [styles.cerium]: Number(periodicalNumber) === 58,
+        [styles.thorium]: Number(periodicalNumber) === 90,
+        [styles.semimetal]: isSemimetal,
       })}
       style={{
         backgroundColor: hexColor,
-        ...getPositionStyles({ number, group, period }),
+        gridColumn: xPos,
+        gridRow: yPos,
       }}
     >
       <div className={styles.main}>
         <span className={styles.symbol}>{symbol}</span>
-        <span className={styles.number}>{number}</span>
+        <span className={styles.periodicalNumber}>{periodicalNumber}</span>
       </div>
       <div className={styles.details}>
         <div className={styles.weightRow}>
-          <span className={styles.weight}>{getRelativeAtomicWeight(relativeAtomicWeight)}</span>
-          <span className={styles.oxidationState}>
-            {getOxidState(stableOxidationState)}
-          </span>
+          <span className={styles.weight}>{relativeAtomicWeight}</span>
+          <span className={styles.oxidationState}>{stableOxidationState}</span>
         </div>
         <div className={styles.names}>
-          <p className={styles.mainName}>{rusName}</p>
-          <p className={styles.secondaryName}>{engName}</p>
+          <p className={styles.mainName}>{mainName}</p>
+          <p className={styles.secondaryName}>{secondaryName}</p>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 [
   {
-    "number": "1",
+    "periodicalNumber": "1",
     "symbol": "H",
     "rusName": "Водород",
     "engName": "Hydrogen",
@@ -33,7 +33,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "2",
+    "periodicalNumber": "2",
     "symbol": "He",
     "rusName": "Гелий",
     "engName": "Helium",
@@ -65,7 +65,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "3",
+    "periodicalNumber": "3",
     "symbol": "Li",
     "rusName": "Литий",
     "engName": "Lithium",
@@ -98,7 +98,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "4",
+    "periodicalNumber": "4",
     "symbol": "Be",
     "rusName": "Бериллий",
     "engName": "Beryllium",
@@ -131,7 +131,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "5",
+    "periodicalNumber": "5",
     "symbol": "B",
     "rusName": "Бор",
     "engName": "Boron",
@@ -164,7 +164,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "6",
+    "periodicalNumber": "6",
     "symbol": "C",
     "rusName": "Углерод",
     "engName": "Carbon",
@@ -197,7 +197,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "7",
+    "periodicalNumber": "7",
     "symbol": "N",
     "rusName": "Азот",
     "engName": "Nitrogen",
@@ -231,7 +231,7 @@
     "videoLink": "https://www.youtube.com/watch?v=iH1x90ZndIo"
   },
   {
-    "number": "8",
+    "periodicalNumber": "8",
     "symbol": "O",
     "rusName": "Кислород",
     "engName": "Oxygen",
@@ -264,7 +264,7 @@
     "videoLink": "https://www.youtube.com/watch?v=IKpDguTBiUU\r\nhttps://www.youtube.com/watch?v=FliOJ2C8xpw\r\nhttps://www.youtube.com/watch?v=O3fmT0DGshM\r\nhttps://www.youtube.com/watch?v=vuSplAoifE0\r\n"
   },
   {
-    "number": "9",
+    "periodicalNumber": "9",
     "symbol": "F",
     "rusName": "Фтор",
     "engName": "Fluorine",
@@ -296,7 +296,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "10",
+    "periodicalNumber": "10",
     "symbol": "Ne",
     "rusName": "Неон",
     "engName": "Neon",
@@ -328,7 +328,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "11",
+    "periodicalNumber": "11",
     "symbol": "Na",
     "rusName": "Натрий",
     "engName": "Sodium",
@@ -361,7 +361,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "12",
+    "periodicalNumber": "12",
     "symbol": "Mg",
     "rusName": "Магний",
     "engName": "Magnesium",
@@ -394,7 +394,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "13",
+    "periodicalNumber": "13",
     "symbol": "Al",
     "rusName": "Алюминий",
     "engName": "Aluminium",
@@ -427,7 +427,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "14",
+    "periodicalNumber": "14",
     "symbol": "Si",
     "rusName": "Кремний",
     "engName": "Silicon",
@@ -461,7 +461,7 @@
     "videoLink": "https://www.youtube.com/watch?v=MI1gTCKdYU4"
   },
   {
-    "number": "15",
+    "periodicalNumber": "15",
     "symbol": "P",
     "rusName": "Фосфор",
     "engName": "Phosphorus",
@@ -494,7 +494,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "16",
+    "periodicalNumber": "16",
     "symbol": "S",
     "rusName": "Сера",
     "engName": "Sulfur",
@@ -527,7 +527,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "17",
+    "periodicalNumber": "17",
     "symbol": "Cl",
     "rusName": "Хлор",
     "engName": "Chlorine",
@@ -560,7 +560,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "18",
+    "periodicalNumber": "18",
     "symbol": "Ar",
     "rusName": "Аргон",
     "engName": "Argon",
@@ -592,7 +592,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "19",
+    "periodicalNumber": "19",
     "symbol": "K",
     "rusName": "Калий",
     "engName": "Potassium",
@@ -625,7 +625,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "20",
+    "periodicalNumber": "20",
     "symbol": "Ca",
     "rusName": "Кальций",
     "engName": "Calcium",
@@ -658,7 +658,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "21",
+    "periodicalNumber": "21",
     "symbol": "Sc",
     "rusName": "Скандий",
     "engName": "Scandium",
@@ -691,7 +691,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "22",
+    "periodicalNumber": "22",
     "symbol": "Ti",
     "rusName": "Титан",
     "engName": "Titanium",
@@ -725,7 +725,7 @@
     "videoLink": "https://www.youtube.com/watch?v=BRprrPsz7sc"
   },
   {
-    "number": "23",
+    "periodicalNumber": "23",
     "symbol": "V",
     "rusName": "Ванадий",
     "engName": "Vanadium",
@@ -758,7 +758,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "24",
+    "periodicalNumber": "24",
     "symbol": "Cr",
     "rusName": "Хром",
     "engName": "Chromium",
@@ -791,7 +791,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "25",
+    "periodicalNumber": "25",
     "symbol": "Mn",
     "rusName": "Марганец",
     "engName": "Manganese",
@@ -824,7 +824,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "26",
+    "periodicalNumber": "26",
     "symbol": "Fe",
     "rusName": "Железо",
     "engName": "Iron",
@@ -857,7 +857,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "27",
+    "periodicalNumber": "27",
     "symbol": "Co",
     "rusName": "Кобальт",
     "engName": "Cobalt",
@@ -890,7 +890,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "28",
+    "periodicalNumber": "28",
     "symbol": "Ni",
     "rusName": "Никель",
     "engName": "Nickel",
@@ -923,7 +923,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "29",
+    "periodicalNumber": "29",
     "symbol": "Cu",
     "rusName": "Медь",
     "engName": "Copper",
@@ -956,7 +956,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "30",
+    "periodicalNumber": "30",
     "symbol": "Zn",
     "rusName": "Цинк",
     "engName": "Zinc",
@@ -989,7 +989,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "31",
+    "periodicalNumber": "31",
     "symbol": "Ga",
     "rusName": "Галлий",
     "engName": "Gallium",
@@ -1022,7 +1022,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "32",
+    "periodicalNumber": "32",
     "symbol": "Ge",
     "rusName": "Германий",
     "engName": "Germanium",
@@ -1055,7 +1055,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "33",
+    "periodicalNumber": "33",
     "symbol": "As",
     "rusName": "Мышьяк",
     "engName": "Arsenic",
@@ -1089,7 +1089,7 @@
     "videoLink": "https://www.youtube.com/watch?v=TSUVHjdS9Ak"
   },
   {
-    "number": "34",
+    "periodicalNumber": "34",
     "symbol": "Se",
     "rusName": "Селен",
     "engName": "Selenium",
@@ -1122,7 +1122,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "35",
+    "periodicalNumber": "35",
     "symbol": "Br",
     "rusName": "Бром",
     "engName": "Bromine",
@@ -1156,7 +1156,7 @@
     "videoLink": "https://www.youtube.com/watch?v=gU7FaA45vmU"
   },
   {
-    "number": "36",
+    "periodicalNumber": "36",
     "symbol": "Kr",
     "rusName": "Криптон",
     "engName": "Krypton",
@@ -1188,7 +1188,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "37",
+    "periodicalNumber": "37",
     "symbol": "Rb",
     "rusName": "Рубидий",
     "engName": "Rubidium",
@@ -1221,7 +1221,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "38",
+    "periodicalNumber": "38",
     "symbol": "Sr",
     "rusName": "Стронций",
     "engName": "Strontium",
@@ -1254,7 +1254,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "39",
+    "periodicalNumber": "39",
     "symbol": "Y",
     "rusName": "Иттрий",
     "engName": "Yttrium",
@@ -1287,7 +1287,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "40",
+    "periodicalNumber": "40",
     "symbol": "Zr",
     "rusName": "Цирконий",
     "engName": "Zirconium",
@@ -1320,7 +1320,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "41",
+    "periodicalNumber": "41",
     "symbol": "Nb",
     "rusName": "Ниобий",
     "engName": "Niobium",
@@ -1353,7 +1353,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "42",
+    "periodicalNumber": "42",
     "symbol": "Mo",
     "rusName": "Молибден",
     "engName": "Molybdenum",
@@ -1386,7 +1386,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "43",
+    "periodicalNumber": "43",
     "symbol": "Tc",
     "rusName": "Технеций",
     "engName": "Technetium",
@@ -1419,7 +1419,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "44",
+    "periodicalNumber": "44",
     "symbol": "Ru",
     "rusName": "Рутений",
     "engName": "Ruthenium",
@@ -1452,7 +1452,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "45",
+    "periodicalNumber": "45",
     "symbol": "Rh",
     "rusName": "Родий",
     "engName": "Rhodium",
@@ -1484,7 +1484,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "46",
+    "periodicalNumber": "46",
     "symbol": "Pd",
     "rusName": "Палладий",
     "engName": "Palladium",
@@ -1517,7 +1517,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "47",
+    "periodicalNumber": "47",
     "symbol": "Ag",
     "rusName": "Серебро",
     "engName": "Silver",
@@ -1550,7 +1550,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "48",
+    "periodicalNumber": "48",
     "symbol": "Cd",
     "rusName": "Кадмий",
     "engName": "Cadmium",
@@ -1583,7 +1583,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "49",
+    "periodicalNumber": "49",
     "symbol": "In",
     "rusName": "Индий",
     "engName": "Indium",
@@ -1616,7 +1616,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "50",
+    "periodicalNumber": "50",
     "symbol": "Sn",
     "rusName": "Олово",
     "engName": "Tin",
@@ -1649,7 +1649,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "51",
+    "periodicalNumber": "51",
     "symbol": "Sb",
     "rusName": "Сурьма",
     "engName": "Antimony",
@@ -1682,7 +1682,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "52",
+    "periodicalNumber": "52",
     "symbol": "Te",
     "rusName": "Теллур",
     "engName": "Tellurium",
@@ -1715,7 +1715,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "53",
+    "periodicalNumber": "53",
     "symbol": "I",
     "rusName": "Йод",
     "engName": "Iodine",
@@ -1749,7 +1749,7 @@
     "videoLink": "https://www.youtube.com/watch?v=SOiO8eLyJ6U"
   },
   {
-    "number": "54",
+    "periodicalNumber": "54",
     "symbol": "Xe",
     "rusName": "Ксенон",
     "engName": "Xenon",
@@ -1781,7 +1781,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "55",
+    "periodicalNumber": "55",
     "symbol": "Cs",
     "rusName": "Цезий",
     "engName": "Cesium",
@@ -1814,7 +1814,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "56",
+    "periodicalNumber": "56",
     "symbol": "Ba",
     "rusName": "Барий",
     "engName": "Barium",
@@ -1847,7 +1847,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "57",
+    "periodicalNumber": "57",
     "symbol": "La",
     "rusName": "Лантан",
     "engName": "Lanthanum",
@@ -1880,7 +1880,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "58",
+    "periodicalNumber": "58",
     "symbol": "Ce",
     "rusName": "Церий",
     "engName": "Cerium",
@@ -1913,7 +1913,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "59",
+    "periodicalNumber": "59",
     "symbol": "Pr",
     "rusName": "Празеодим",
     "engName": "Praseodymium",
@@ -1946,7 +1946,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "60",
+    "periodicalNumber": "60",
     "symbol": "Nd",
     "rusName": "Неодим",
     "engName": "Neodymium",
@@ -1979,7 +1979,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "61",
+    "periodicalNumber": "61",
     "symbol": "Pm",
     "rusName": "Прометий",
     "engName": "Promethium",
@@ -2012,7 +2012,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "62",
+    "periodicalNumber": "62",
     "symbol": "Sm",
     "rusName": "Самарий",
     "engName": "Samarium",
@@ -2045,7 +2045,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "63",
+    "periodicalNumber": "63",
     "symbol": "Eu",
     "rusName": "Европий",
     "engName": "Europium",
@@ -2078,7 +2078,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "64",
+    "periodicalNumber": "64",
     "symbol": "Gd",
     "rusName": "Гадолиний",
     "engName": "Gadolinium",
@@ -2111,7 +2111,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "65",
+    "periodicalNumber": "65",
     "symbol": "Tb",
     "rusName": "Тербий",
     "engName": "Terbium",
@@ -2144,7 +2144,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "66",
+    "periodicalNumber": "66",
     "symbol": "Dy",
     "rusName": "Диспрозий",
     "engName": "Dysprosium",
@@ -2177,7 +2177,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "67",
+    "periodicalNumber": "67",
     "symbol": "Ho",
     "rusName": "Гольмий",
     "engName": "Holmium",
@@ -2210,7 +2210,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "68",
+    "periodicalNumber": "68",
     "symbol": "Er",
     "rusName": "Эрбий",
     "engName": "Erbium",
@@ -2243,7 +2243,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "69",
+    "periodicalNumber": "69",
     "symbol": "Tm",
     "rusName": "Тулий",
     "engName": "Thulium",
@@ -2276,7 +2276,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "70",
+    "periodicalNumber": "70",
     "symbol": "Yb",
     "rusName": "Иттербий",
     "engName": "Ytterbium",
@@ -2309,7 +2309,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "71",
+    "periodicalNumber": "71",
     "symbol": "Lu",
     "rusName": "Лютеций",
     "engName": "Lutetium",
@@ -2342,7 +2342,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "72",
+    "periodicalNumber": "72",
     "symbol": "Hf",
     "rusName": "Гафний",
     "engName": "Hafnium",
@@ -2375,7 +2375,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "73",
+    "periodicalNumber": "73",
     "symbol": "Ta",
     "rusName": "Тантал",
     "engName": "Tantalum",
@@ -2408,7 +2408,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "74",
+    "periodicalNumber": "74",
     "symbol": "W",
     "rusName": "Вольфрам",
     "engName": "Tungsten",
@@ -2441,7 +2441,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "75",
+    "periodicalNumber": "75",
     "symbol": "Re",
     "rusName": "Рений",
     "engName": "Rhenium",
@@ -2474,7 +2474,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "76",
+    "periodicalNumber": "76",
     "symbol": "Os",
     "rusName": "Осмий",
     "engName": "Osmium",
@@ -2507,7 +2507,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "77",
+    "periodicalNumber": "77",
     "symbol": "Ir",
     "rusName": "Иридий",
     "engName": "Iridium",
@@ -2540,7 +2540,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "78",
+    "periodicalNumber": "78",
     "symbol": "Pt",
     "rusName": "Платина",
     "engName": "Platinum",
@@ -2573,7 +2573,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "79",
+    "periodicalNumber": "79",
     "symbol": "Au",
     "rusName": "Золото",
     "engName": "Gold",
@@ -2606,7 +2606,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "80",
+    "periodicalNumber": "80",
     "symbol": "Hg",
     "rusName": "Ртуть",
     "engName": "Mercury",
@@ -2639,7 +2639,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "81",
+    "periodicalNumber": "81",
     "symbol": "Tl",
     "rusName": "Таллий",
     "engName": "Thallium",
@@ -2672,7 +2672,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "82",
+    "periodicalNumber": "82",
     "symbol": "Pb",
     "rusName": "Свинец",
     "engName": "Lead",
@@ -2705,7 +2705,7 @@
     "radioactivity": "0"
   },
   {
-    "number": "83",
+    "periodicalNumber": "83",
     "symbol": "Bi",
     "rusName": "Висмут",
     "engName": "Bismuth",
@@ -2738,7 +2738,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "84",
+    "periodicalNumber": "84",
     "symbol": "Po",
     "rusName": "Полоний",
     "engName": "Polonium",
@@ -2771,7 +2771,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "85",
+    "periodicalNumber": "85",
     "symbol": "At",
     "rusName": "Астат",
     "engName": "Astatine",
@@ -2803,7 +2803,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "86",
+    "periodicalNumber": "86",
     "symbol": "Rn",
     "rusName": "Радон",
     "engName": "Radon",
@@ -2835,7 +2835,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "87",
+    "periodicalNumber": "87",
     "symbol": "Fr",
     "rusName": "Франций",
     "engName": "Francium",
@@ -2868,7 +2868,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "88",
+    "periodicalNumber": "88",
     "symbol": "Ra",
     "rusName": "Радий",
     "engName": "Radium",
@@ -2901,7 +2901,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "89",
+    "periodicalNumber": "89",
     "symbol": "Ac",
     "rusName": "Актиний",
     "engName": "Actinium",
@@ -2933,7 +2933,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "90",
+    "periodicalNumber": "90",
     "symbol": "Th",
     "rusName": "Торий",
     "engName": "Thorium",
@@ -2966,7 +2966,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "91",
+    "periodicalNumber": "91",
     "symbol": "Pa",
     "rusName": "Проактиний",
     "engName": "Protactinium",
@@ -2999,7 +2999,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "92",
+    "periodicalNumber": "92",
     "symbol": "U",
     "rusName": "Уран",
     "engName": "Uranium",
@@ -3033,7 +3033,7 @@
     "videoLink": "https://www.youtube.com/watch?v=9qC779-4Gqw"
   },
   {
-    "number": "93",
+    "periodicalNumber": "93",
     "symbol": "Np",
     "rusName": "Нептуний",
     "engName": "Neptunium",
@@ -3066,7 +3066,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "94",
+    "periodicalNumber": "94",
     "symbol": "Pu",
     "rusName": "Плутоний",
     "engName": "Plutonium",
@@ -3099,7 +3099,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "95",
+    "periodicalNumber": "95",
     "symbol": "Am",
     "rusName": "Америций",
     "engName": "Americium",
@@ -3132,7 +3132,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "96",
+    "periodicalNumber": "96",
     "symbol": "Cm",
     "rusName": "Кюрий",
     "engName": "Curium",
@@ -3165,7 +3165,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "97",
+    "periodicalNumber": "97",
     "symbol": "Bk",
     "rusName": "Берклий",
     "engName": "Berkelium",
@@ -3197,7 +3197,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "98",
+    "periodicalNumber": "98",
     "symbol": "Cf",
     "rusName": "Калифорний",
     "engName": "Californium",
@@ -3229,7 +3229,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "99",
+    "periodicalNumber": "99",
     "symbol": "Es",
     "rusName": "Энштейний",
     "engName": "Einsteinium",
@@ -3261,7 +3261,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "100",
+    "periodicalNumber": "100",
     "symbol": "Fm",
     "rusName": "Фермий",
     "engName": "Fermium",
@@ -3293,7 +3293,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "101",
+    "periodicalNumber": "101",
     "symbol": "Md",
     "rusName": "Менделевий",
     "engName": "Mendelevium",
@@ -3325,7 +3325,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "102",
+    "periodicalNumber": "102",
     "symbol": "No",
     "rusName": "Нобелий",
     "engName": "Nobelium",
@@ -3357,7 +3357,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "103",
+    "periodicalNumber": "103",
     "symbol": "Lr",
     "rusName": "Лоуренсий",
     "engName": "Lawrencium",
@@ -3389,7 +3389,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "104",
+    "periodicalNumber": "104",
     "symbol": "Rf",
     "rusName": "Резерфордий",
     "engName": "Rutherfordium",
@@ -3421,7 +3421,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "105",
+    "periodicalNumber": "105",
     "symbol": "Db",
     "rusName": "Дубний",
     "engName": "Dubnium",
@@ -3453,7 +3453,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "106",
+    "periodicalNumber": "106",
     "symbol": "Sg",
     "rusName": "Сиборгий",
     "engName": "Seaborgium",
@@ -3485,7 +3485,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "107",
+    "periodicalNumber": "107",
     "symbol": "Bh",
     "rusName": "Борий",
     "engName": "Bohrium",
@@ -3517,7 +3517,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "108",
+    "periodicalNumber": "108",
     "symbol": "Hs",
     "rusName": "Хассий",
     "engName": "Hassium",
@@ -3549,7 +3549,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "109",
+    "periodicalNumber": "109",
     "symbol": "Mt",
     "rusName": "Мейтнерий",
     "engName": "Meitnerium",
@@ -3581,7 +3581,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "110",
+    "periodicalNumber": "110",
     "symbol": "Ds",
     "rusName": "Драмштадтий",
     "engName": "Dramstadtium",
@@ -3613,7 +3613,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "111",
+    "periodicalNumber": "111",
     "symbol": "Rg",
     "rusName": "Рентгений",
     "engName": "Roentgenium",
@@ -3645,7 +3645,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "112",
+    "periodicalNumber": "112",
     "symbol": "Cn",
     "rusName": "Коперниций",
     "engName": "Copernicium",
@@ -3677,7 +3677,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "113",
+    "periodicalNumber": "113",
     "symbol": "Nh",
     "rusName": "Нихоний",
     "engName": "Nihonium",
@@ -3709,7 +3709,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "114",
+    "periodicalNumber": "114",
     "symbol": "Fl",
     "rusName": "Флеровий",
     "engName": "Flerovium",
@@ -3741,7 +3741,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "115",
+    "periodicalNumber": "115",
     "symbol": "Mc",
     "rusName": "Московий",
     "engName": "Moscovium",
@@ -3773,7 +3773,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "116",
+    "periodicalNumber": "116",
     "symbol": "Lv",
     "rusName": "Ливерморий",
     "engName": "Livermorium",
@@ -3805,7 +3805,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "117",
+    "periodicalNumber": "117",
     "symbol": "Ts",
     "rusName": "Теннессин",
     "engName": "Tenessine",
@@ -3837,7 +3837,7 @@
     "radioactivity": "1"
   },
   {
-    "number": "118",
+    "periodicalNumber": "118",
     "symbol": "Og",
     "rusName": "Оганесон",
     "engName": "Oganesson",
