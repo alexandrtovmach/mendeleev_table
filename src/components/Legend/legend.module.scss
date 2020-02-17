@@ -1,9 +1,11 @@
+$spaceSize: 2rem;
+
 .legend-container {
 	grid-column-start: 3;
 	grid-row-start: 1;
 	grid-column-end: 13;
 	grid-row-end: 4;
-	padding: 0 2em;
+	padding: 0 $spaceSize $spaceSize $spaceSize;
 	display: flex;
 	justify-content: space-between;
 	// align-items: center;
@@ -19,7 +21,26 @@
 		}
 	}
 
-	.types-list {
+	.sort-list {
+		height: 100%;
 		flex: 0 1 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border-left: 2px solid #000;
+		font-size: 130%;
+		.sort-item {
+			display: flex;
+			align-items: center;
+			.sort-sign {
+				font-family: "Helvetica";
+				font-weight: 700;
+			}
+			.sort-color-block {
+				width: $spaceSize*2;
+				height: $spaceSize*1.2;
+				margin: 0 $spaceSize/4 0 $spaceSize;
+			}
+		}
 	}
 }

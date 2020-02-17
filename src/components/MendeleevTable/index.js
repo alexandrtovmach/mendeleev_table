@@ -1,4 +1,5 @@
 import React from "react"
+import classNames from "classnames"
 
 import { Element, Legend } from "../"
 import styles from "./table.module.scss"
@@ -109,15 +110,45 @@ class Table extends React.Component {
   }
 
   render() {
-    const { elements } = this.props
+    const { elements, sortColors } = this.props
     const { selectedElementIdx } = this.state
 
     return (
       <div className={styles.tableContainer}>
-        <Legend>
+        <Legend colorList={sortColors}>
           {this.nodeToElementComponent(elements[selectedElementIdx])}
         </Legend>
         {elements.map(this.nodeToElementComponent)}
+        <div
+          className={classNames(styles.line, styles.light)}
+          style={{
+            gridRow: 6,
+          }}
+        ></div>
+        <div
+          className={classNames(styles.line, styles.dark)}
+          style={{
+            gridRow: 7,
+          }}
+        ></div>
+        <div
+          className={classNames(styles.line, styles.dashed)}
+          style={{
+            gridRow: 8,
+          }}
+        ></div>
+        <div
+          className={classNames(styles.line, styles.light)}
+          style={{
+            gridRow: 9,
+          }}
+        ></div>
+        <div
+          className={classNames(styles.line, styles.dark)}
+          style={{
+            gridRow: 10,
+          }}
+        ></div>
       </div>
     )
   }

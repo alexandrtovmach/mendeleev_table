@@ -1,10 +1,28 @@
+$lantanoidsGapWidth: 5px;
 .table-container {
   width: 1024px;
   height: 768px;
-  margin: 1em;
+  margin: 1rem;
 
   display: grid;
   grid-gap: 1px;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(10, 1fr);
+
+  .line {
+    grid-column: 3;
+		justify-self: end;
+		width: $lantanoidsGapWidth;
+		outline: 1px solid #000;
+
+    &.light {
+      background-color: #c3d9b4;
+    }
+    &.dark {
+      background-color: #9cbd84;
+    }
+    &.dashed {
+      outline: 1px dashed #000;
+    }
+  }
 }

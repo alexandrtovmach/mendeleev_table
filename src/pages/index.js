@@ -6,6 +6,13 @@ import { MendeleevTable } from "../components"
 export const query = graphql`
   query {
     allPeriodicalTableJson {
+      group(field: hexColor, limit: 1) {
+        nodes {
+          hexColor
+          color
+          sort
+        }
+      }
       edges {
         node {
           id
@@ -47,6 +54,10 @@ export const query = graphql`
   }
 `
 
-export default ({ data: { allPeriodicalTableJson: { edges } } }) => {
-  return <MendeleevTable elements={edges} />
+export default ({
+  data: {
+    allPeriodicalTableJson: { edges, group },
+  },
+}) => {
+  return <MendeleevTable elements={edges} sortColors={group} />
 }
