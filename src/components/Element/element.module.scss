@@ -1,10 +1,12 @@
 $lantanoidsGapWidth: 5px;
+$semimetalMarkWidth: 10px;
 
 .element-container {
+	position: relative;
   width: 70px;
   height: 70px;
   padding: 0.2em;
-  box-shadow: 0 0 0 1px #000;
+  outline: 1px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,9 +43,22 @@ $lantanoidsGapWidth: 5px;
     }
   }
 
+	&.semimetal {
+		border-bottom-left-radius: $semimetalMarkWidth;
+		&:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+      width: $semimetalMarkWidth;
+      height: $semimetalMarkWidth;
+			background-color: #000;
+		}
+	}
+
   &.lanthanum,
   &.actinium {
-    position: relative;
     width: calc(70px - #{$lantanoidsGapWidth});
     &:before {
       content: "";

@@ -25,7 +25,11 @@ const getPositionStyles = ({ number, group, period }) => {
     gridColumn: Number(group) + groupGap,
     gridRow: Number(period) + periodGap,
   }
-}
+};
+
+const isSemimetal = (number) => {
+	return [5, 14, 32, 33, 51, 52, 84, 85].includes(Number(number));
+};
 
 const Element = ({
   number,
@@ -66,6 +70,7 @@ const Element = ({
         [styles.actinium]: Number(number) === 89,
         [styles.cerium]: Number(number) === 58,
         [styles.thorium]: Number(number) === 90,
+				[styles.semimetal]: isSemimetal(number)
       })}
       style={{
         backgroundColor: hexColor,
