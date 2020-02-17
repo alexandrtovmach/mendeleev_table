@@ -1,0 +1,25 @@
+.legend-container {
+	grid-column-start: 3;
+	grid-row-start: 1;
+	grid-column-end: 13;
+	grid-row-end: 4;
+	padding: 0 2em;
+	display: flex;
+	justify-content: space-between;
+	// align-items: center;
+
+	.cell-description {
+		flex: 1 0 70%;
+		display: flex;
+		justify-content: center;
+		// align-items: center;
+		.legend-element-scale {
+			transform: scale(2.5);
+			transform-origin: top center;
+		}
+	}
+
+	.types-list {
+		flex: 0 1 30%;
+	}
+}

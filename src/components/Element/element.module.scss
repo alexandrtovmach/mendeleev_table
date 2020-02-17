@@ -1,6 +1,9 @@
 $lantanoidsGapWidth: 5px;
 $semimetalMarkWidth: 10px;
-$radioactiveMarkWidth: 4px;
+$radioactiveMarkWidth: 2.5px;
+$radioactiveColor: #e54f4f;
+$atomicRadiusColorMain: rgba(255, 255, 255, 0.4);
+$atomicRadiusColorInversed: rgba(0, 0, 0, 0.6);
 
 .element-container {
   position: relative;
@@ -50,20 +53,32 @@ $radioactiveMarkWidth: 4px;
     right: $radioactiveMarkWidth/2;
     bottom: $radioactiveMarkWidth/2;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .radioactive {
-      width: $radioactiveMarkWidth;
-      height: $radioactiveMarkWidth;
+    background: $atomicRadiusColorMain;
+
+    &.radioactive {
       border-radius: 50%;
-      background-color: #e54f4f;
+      background: radial-gradient(
+        circle,
+        $radioactiveColor 0,
+        $radioactiveColor $radioactiveMarkWidth,
+        $atomicRadiusColorMain $radioactiveMarkWidth,
+        $atomicRadiusColorMain
+      );
     }
 
     &.inversed-color {
-      background-color: rgba(0, 0, 0, 0.5);
+      background: $atomicRadiusColorInversed;
+			&.radioactive {
+      background: radial-gradient(
+        circle,
+        $radioactiveColor 0,
+        $radioactiveColor $radioactiveMarkWidth,
+        $atomicRadiusColorInversed $radioactiveMarkWidth,
+        $atomicRadiusColorInversed 10px,
+        transparent 10px
+      );
+    }
     }
   }
 

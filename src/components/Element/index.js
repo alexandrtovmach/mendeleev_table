@@ -4,8 +4,8 @@ import classNames from "classnames"
 import styles from "./element.module.scss"
 
 const atomicRadiusToSize = atomicRadius => ({
-  width: `${atomicRadius * 9 || 10}%`,
-  height: `${atomicRadius * 9 || 10}%`,
+  width: `${Math.round(atomicRadius * 8 || 10)}%`,
+  height: `${Math.round(atomicRadius * 8 || 10)}%`,
 })
 
 const Element = ({
@@ -22,6 +22,7 @@ const Element = ({
   isSemimetal,
   isRadioactive,
   isInversedColor,
+  onClick,
 }) => {
   return (
     <div
@@ -37,6 +38,7 @@ const Element = ({
         gridColumn: xPos,
         gridRow: yPos,
       }}
+      onClick={onClick}
     >
       <div className={styles.main}>
         <span className={styles.symbol}>{symbol}</span>
@@ -52,11 +54,13 @@ const Element = ({
           <p className={styles.secondaryName}>{secondaryName}</p>
         </div>
       </div>
-      <div className={classNames(styles.atomicRadius, {
-				[styles.inversedColor]: isInversedColor
-			})} style={atomicRadiusToSize(atomicRadius)}>
-        {isRadioactive && <div className={styles.radioactive}></div>}
-      </div>
+      <div
+        className={classNames(styles.atomicRadius, {
+          [styles.inversedColor]: isInversedColor,
+          [styles.radioactive]: isRadioactive,
+        })}
+        style={atomicRadiusToSize(atomicRadius)}
+      ></div>
     </div>
   )
 }
