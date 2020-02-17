@@ -31,6 +31,10 @@ const isSemimetal = (number) => {
 	return [5, 14, 32, 33, 51, 52, 84, 85].includes(Number(number));
 };
 
+const getRelativeAtomicWeight = (weight) => {
+	return Number(weight)%1? weight: `[${weight}]`;
+};
+
 const Element = ({
   number,
   symbol,
@@ -83,7 +87,7 @@ const Element = ({
       </div>
       <div className={styles.details}>
         <div className={styles.weightRow}>
-          <span className={styles.weight}>{relativeAtomicWeight}</span>
+          <span className={styles.weight}>{getRelativeAtomicWeight(relativeAtomicWeight)}</span>
           <span className={styles.oxidationState}>
             {getOxidState(stableOxidationState)}
           </span>
