@@ -3,6 +3,11 @@ import classNames from "classnames"
 
 import styles from "./element.module.scss"
 
+const atomicRadiusToSize = atomicRadius => ({
+  width: `${atomicRadius * 9 || 10}%`,
+  height: `${atomicRadius * 9 || 10}%`,
+})
+
 const Element = ({
   periodicalNumber,
   symbol,
@@ -13,7 +18,10 @@ const Element = ({
   yPos,
   stableOxidationState,
   hexColor,
+  atomicRadius,
   isSemimetal,
+  isRadioactive,
+  isInversedColor,
 }) => {
   return (
     <div
@@ -43,6 +51,11 @@ const Element = ({
           <p className={styles.mainName}>{mainName}</p>
           <p className={styles.secondaryName}>{secondaryName}</p>
         </div>
+      </div>
+      <div className={classNames(styles.atomicRadius, {
+				[styles.inversedColor]: isInversedColor
+			})} style={atomicRadiusToSize(atomicRadius)}>
+        {isRadioactive && <div className={styles.radioactive}></div>}
       </div>
     </div>
   )

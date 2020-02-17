@@ -1,8 +1,9 @@
 $lantanoidsGapWidth: 5px;
 $semimetalMarkWidth: 10px;
+$radioactiveMarkWidth: 4px;
 
 .element-container {
-	position: relative;
+  position: relative;
   width: 70px;
   height: 70px;
   padding: 0.2em;
@@ -43,9 +44,32 @@ $semimetalMarkWidth: 10px;
     }
   }
 
-	&.semimetal {
-		border-bottom-left-radius: $semimetalMarkWidth;
-		&:before {
+  .atomic-radius {
+    position: absolute;
+    z-index: 0;
+    right: $radioactiveMarkWidth/2;
+    bottom: $radioactiveMarkWidth/2;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .radioactive {
+      width: $radioactiveMarkWidth;
+      height: $radioactiveMarkWidth;
+      border-radius: 50%;
+      background-color: #e54f4f;
+    }
+
+    &.inversed-color {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &.semimetal {
+    border-bottom-left-radius: $semimetalMarkWidth;
+    &:before {
       content: "";
       position: absolute;
       z-index: -1;
@@ -53,9 +77,9 @@ $semimetalMarkWidth: 10px;
       bottom: 0;
       width: $semimetalMarkWidth;
       height: $semimetalMarkWidth;
-			background-color: #000;
-		}
-	}
+      background-color: #000;
+    }
+  }
 
   &.lanthanum,
   &.actinium {

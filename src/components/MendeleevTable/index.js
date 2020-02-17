@@ -53,12 +53,17 @@ const Table = ({ elements }) => {
               stableOxidationState,
               rusName,
               engName,
+              color,
               hexColor,
               group,
               period,
+							atomicRadius,
+							radioactivity
             },
           }) => {
             const isSemimetal = isSemimetalCheck(periodicalNumber)
+            const isRadioactive = Boolean(Number(radioactivity))
+            const isInversedColor = Number(color) === 2
             const isLantanoid = periodicalNumber >= 58 && periodicalNumber <= 71
             const isActinoid = periodicalNumber >= 90 && periodicalNumber <= 103
             const weight = getRelativeAtomicWeight(relativeAtomicWeight)
@@ -82,9 +87,12 @@ const Table = ({ elements }) => {
                 relativeAtomicWeight={weight}
                 stableOxidationState={oxidState}
                 hexColor={hexColor}
+                atomicRadius={atomicRadius}
                 isSemimetal={isSemimetal}
                 isLantanoid={isLantanoid}
                 isActinoid={isActinoid}
+                isInversedColor={isInversedColor}
+                isRadioactive={isRadioactive}
               />
             )
           }
