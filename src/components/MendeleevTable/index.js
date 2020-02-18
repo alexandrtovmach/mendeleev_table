@@ -78,11 +78,13 @@ class Table extends React.Component {
       periodicalNumber,
       group,
       period,
-    })
+    });
+
+		const isCustomElement = idx === undefined;
     return (
       <Element
         key={id}
-        onClick={this.handleSelectElement(idx)}
+        onClick={!isCustomElement && this.handleSelectElement(idx)}
         periodicalNumber={periodicalNumber}
         xPos={xPos}
         yPos={yPos}
@@ -98,6 +100,7 @@ class Table extends React.Component {
         isActinoid={isActinoid}
         isInversedColor={isInversedColor}
         isRadioactive={isRadioactive}
+        isCustomElement={isCustomElement}
       />
     )
   }

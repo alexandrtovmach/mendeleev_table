@@ -22,13 +22,15 @@ const Element = ({
   isSemimetal,
   isRadioactive,
   isInversedColor,
+  isCustomElement,
   onClick,
 }) => {
   return (
     <div
       className={classNames(styles.elementContainer, {
         [styles.lanthanum]: Number(periodicalNumber) === 57,
-        [styles.actinium]: Number(periodicalNumber) === 89
+        [styles.actinium]: Number(periodicalNumber) === 89,
+				[styles.custom]: isCustomElement
       })}
       style={{
         backgroundColor: hexColor,
