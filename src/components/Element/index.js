@@ -28,8 +28,7 @@ const Element = ({
     <div
       className={classNames(styles.elementContainer, {
         [styles.lanthanum]: Number(periodicalNumber) === 57,
-        [styles.actinium]: Number(periodicalNumber) === 89,
-        [styles.semimetal]: isSemimetal,
+        [styles.actinium]: Number(periodicalNumber) === 89
       })}
       style={{
         backgroundColor: hexColor,
@@ -59,6 +58,7 @@ const Element = ({
         })}
         style={atomicRadiusToSize(atomicRadius)}
       ></div>
+			{isSemimetal && <div className={styles.semimetal}></div>}
     </div>
   )
 }

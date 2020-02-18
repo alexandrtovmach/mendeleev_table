@@ -14,6 +14,8 @@ $atomicRadiusColorInversed: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+	transition: transform 0.1s;
+	cursor: pointer;
 
   .main {
     display: flex;
@@ -81,20 +83,20 @@ $atomicRadiusColorInversed: rgba(0, 0, 0, 0.6);
     }
     }
   }
-
-  &.semimetal {
-    border-bottom-left-radius: $semimetalMarkWidth;
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      bottom: 0;
-      width: $semimetalMarkWidth;
-      height: $semimetalMarkWidth;
-      background-color: #000;
-    }
+	.semimetal {
+		background: radial-gradient(circle at 100% 0, transparent 0%, transparent $semimetalMarkWidth, black $semimetalMarkWidth);
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		bottom: 0;
+		width: $semimetalMarkWidth;
+		height: $semimetalMarkWidth;
   }
+
+	&:hover {
+		transform: scale(1.1);
+		z-index: 1;
+	}
 
   &.lanthanum,
   &.actinium {
