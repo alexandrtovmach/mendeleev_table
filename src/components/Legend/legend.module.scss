@@ -1,46 +1,104 @@
 $spaceSize: 2rem;
 
 .legend-container {
-	grid-column-start: 3;
-	grid-row-start: 1;
-	grid-column-end: 13;
-	grid-row-end: 4;
-	padding: 0 $spaceSize $spaceSize $spaceSize;
-	display: flex;
-	justify-content: space-between;
-	// align-items: center;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-column-end: 13;
+  grid-row-end: 4;
+  padding-bottom: $spaceSize;
+  display: flex;
+  justify-content: space-between;
 
-	.cell-description {
-		flex: 1 0 70%;
-		display: flex;
-		justify-content: center;
-		// align-items: center;
-		.legend-element-scale {
-			transform: scale(2.5);
-			transform-origin: top center;
-		}
-	}
-
-	.sort-list {
-		height: 100%;
-		flex: 0 1 30%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		border-left: 2px solid #000;
-		font-size: 130%;
-		.sort-item {
+  .cell-description {
+    position: relative;
+    flex: 1 0 70%;
+    display: flex;
+    justify-content: center;
+    .legend-element-scale {
+      transform: scale(2.5);
+      transform-origin: top center;
+    }
+    .annotations {
+			position: absolute;
+			z-index: 2;
 			display: flex;
-			align-items: center;
-			.sort-sign {
-				font-family: "Helvetica";
-				font-weight: 700;
+			justify-content: space-between;
+      width: calc(100% - #{$spaceSize}*2);
+      height: 100%;
+			padding: 0 $spaceSize;
+      .annotation {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: "Helvetica Light";
+				span {
+          padding: 0 $spaceSize/4;
+				}
+        .line {
+          position: relative;
+          width: 100%;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: skew(30deg);
+						transform-origin: top left;
+            border-top: 2px solid #000;
+            border-right: 2px solid #000;
+            border-radius: 1px;
+            bottom: -50%;
+          }
+        }
+      }
+      .left-side, .right-side {
+        position: relative;
+        width: 30%;
+        height: 100%;
+      }
+			.left-side {
+				// anything
 			}
-			.sort-color-block {
-				width: $spaceSize*2;
-				height: $spaceSize*1.2;
-				margin: 0 $spaceSize/4 0 $spaceSize;
+			.right-side {
+				.annotation {
+					flex-direction: row-reverse;
+					span {
+						text-align: right;
+					}
+					.line{
+						&:before {
+							transform: skew(-30deg);
+							border-right: none;
+							border-left: 2px solid #000;
+						}
+					}
+				}
 			}
-		}
-	}
+    }
+  }
+
+  .sort-list {
+    height: 100%;
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 2px solid #000;
+    font-size: 130%;
+    .sort-item {
+      display: flex;
+      align-items: center;
+      .sort-sign {
+        font-family: "Helvetica";
+        font-weight: 700;
+      }
+      .sort-color-block {
+        width: $spaceSize * 2;
+        height: $spaceSize * 1.2;
+        margin: 0 $spaceSize/4 0 $spaceSize;
+      }
+    }
+  }
 }

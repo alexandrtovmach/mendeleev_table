@@ -28,8 +28,8 @@ const Element = ({
   return (
     <div
       className={classNames(styles.elementContainer, {
-        [styles.lanthanum]: Number(periodicalNumber) === 57,
-        [styles.actinium]: Number(periodicalNumber) === 89,
+        [styles.lanthanum]: !isCustomElement && Number(periodicalNumber) === 57,
+        [styles.actinium]: !isCustomElement && Number(periodicalNumber) === 89,
 				[styles.custom]: isCustomElement
       })}
       style={{
