@@ -1,0 +1,9 @@
+$spaceSize: 2rem;
+$headerHeight: 3rem;
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: $spaceSize/2 $spaceSize;
+}

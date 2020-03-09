@@ -1,0 +1,33 @@
+$spaceSize: 2rem;
+$headerHeight: 3rem;
+
+.header {
+	position: fixed;
+	width: calc(100% - #{$spaceSize}*2);
+	height: $headerHeight;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 0 $spaceSize;
+
+	a {
+		text-decoration: none;
+	}
+
+	.headed-nav {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		>* {
+			padding: $spaceSize/3;
+			&:hover {
+				background-color: rgba(0,0,0,0.1);
+			}
+		}
+	}
+}
+
+.header-compensator {
+	height: $headerHeight;
+	width: 100%;
+}

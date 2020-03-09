@@ -1,9 +1,9 @@
 module.exports = {
 	pathPrefix: "/mendeleev_table",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Periodical table | ХимияПросто`,
+    description: `Free open-source periodical table of Mendeleev by ХимияПросто`,
+    author: `@alexandrtovmach`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

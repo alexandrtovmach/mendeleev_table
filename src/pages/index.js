@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import { MendeleevTable } from "../components"
+import { Layout } from "../containers"
 
 export const query = graphql`
   query {
@@ -59,5 +60,9 @@ export default ({
     allPeriodicalTableJson: { edges, group },
   },
 }) => {
-  return <MendeleevTable elements={edges} sortColors={group} />
+  return (
+    <Layout>
+      <MendeleevTable elements={edges} sortColors={group} />
+    </Layout>
+  )
 }
