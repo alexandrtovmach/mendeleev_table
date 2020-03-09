@@ -1,4 +1,5 @@
 $spaceSize: 2rem;
+$scaleQ: 2.5;
 
 .legend-container {
   grid-column-start: 3;
@@ -14,9 +15,10 @@ $spaceSize: 2rem;
     flex: 1 0 70%;
     display: flex;
     justify-content: center;
+		align-items: center;
     .legend-element-scale {
-      transform: scale(2.5);
-      transform-origin: top center;
+      transform: scale($scaleQ);
+			padding: 1px/2*$scaleQ;
     }
     .annotations {
 			position: absolute;
@@ -38,19 +40,12 @@ $spaceSize: 2rem;
 				}
         .line {
           position: relative;
-          width: 100%;
-          &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transform: skew(30deg);
-						transform-origin: top left;
-            border-top: 2px solid #000;
-            border-right: 2px solid #000;
-            border-radius: 1px;
-            bottom: -50%;
-          }
+          width: 80%;
+					transform: translateY(50%) skew(45deg);
+					transform-origin: top left;
+					border-top: 2px solid #000;
+					border-right: 2px solid #000;
+					bottom: -50%;
         }
       }
       .left-side, .right-side {
@@ -68,11 +63,10 @@ $spaceSize: 2rem;
 						text-align: right;
 					}
 					.line{
-						&:before {
-							transform: skew(-30deg);
-							border-right: none;
-							border-left: 2px solid #000;
-						}
+						transform-origin: top right;
+						transform: translateY(50%) skew(-45deg);
+						border-right: none;
+						border-left: 2px solid #000;
 					}
 				}
 			}

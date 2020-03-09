@@ -37,7 +37,7 @@ const isSemimetalCheck = periodicalNumber => {
 }
 
 const getRelativeAtomicWeight = weight => {
-  return Number(weight) % 1 ? weight : `[${weight}]`
+  return weight.includes(".") || Number(weight) % 1 ? weight : `[${weight}]`
 }
 
 class Table extends React.Component {

@@ -28,7 +28,16 @@ const generateBg = color => {
   }
 }
 
+const getAtomicRadiusAnnotationSytles = element => {
+  const base = Number(element.atomicRadius) || 1.5
+  return {
+    height: `${Math.max(2.8 - base, 0.4)}rem`,
+    transform: `translateY(50%) skew(-${45 - (2.9 - base) * 12}deg)`,
+  }
+}
+
 const Legend = ({ colorList, element }) => {
+  console.log(element)
   const colors = generateColors(colorList)
   return (
     <div className={styles.legendContainer}>
@@ -82,7 +91,7 @@ const Legend = ({ colorList, element }) => {
               <div
                 className={styles.line}
                 style={{
-                  height: "0.7rem",
+                  height: "0.5rem",
                 }}
               ></div>
             </div>
@@ -136,9 +145,7 @@ const Legend = ({ colorList, element }) => {
               <span>Atomic radius</span>
               <div
                 className={styles.line}
-                style={{
-                  height: "0.9rem",
-                }}
+                style={getAtomicRadiusAnnotationSytles(element)}
               ></div>
             </div>
             {element.isRadioactive && (
