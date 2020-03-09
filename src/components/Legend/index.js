@@ -1,5 +1,6 @@
 import React from "react"
 
+import { Element } from "../"
 import styles from "./legend.module.scss"
 
 const generateColors = colorList => {
@@ -27,7 +28,7 @@ const generateBg = color => {
   }
 }
 
-const Legend = ({ children, colorList }) => {
+const Legend = ({ colorList, element }) => {
   const colors = generateColors(colorList)
   return (
     <div className={styles.legendContainer}>
@@ -85,20 +86,22 @@ const Legend = ({ children, colorList }) => {
                 }}
               ></div>
             </div>
-            <div
-              className={styles.annotation}
-              style={{
-                top: "85%",
-              }}
-            >
-              <span>Semimetal</span>
+            {element.isSemimetal && (
               <div
-                className={styles.line}
+                className={styles.annotation}
                 style={{
-                  height: "0.2rem",
+                  top: "85%",
                 }}
-              ></div>
-            </div>
+              >
+                <span>Semimetal</span>
+                <div
+                  className={styles.line}
+                  style={{
+                    height: "0.2rem",
+                  }}
+                ></div>
+              </div>
+            )}
           </div>
           <div className={styles.rightSide}>
             <div
@@ -138,20 +141,22 @@ const Legend = ({ children, colorList }) => {
                 }}
               ></div>
             </div>
-            <div
-              className={styles.annotation}
-              style={{
-                top: "85%",
-              }}
-            >
-              <span>Radioactive</span>
+            {element.isRadioactive && (
               <div
-                className={styles.line}
-              ></div>
-            </div>
+                className={styles.annotation}
+                style={{
+                  top: "85%",
+                }}
+              >
+                <span>Radioactive</span>
+                <div className={styles.line}></div>
+              </div>
+            )}
           </div>
         </div>
-        <div className={styles.legendElementScale}>{children}</div>
+        <div className={styles.legendElementScale}>
+          <Element {...element} isCustomElement />
+        </div>
       </div>
       <div className={styles.sortList}>
         {["s", "p", "d", "f"].map(sortName => {

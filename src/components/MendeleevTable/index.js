@@ -45,26 +45,23 @@ class Table extends React.Component {
     selectedElementIdx: 32,
   }
 
-  nodeToElementComponent = (
-    {
-      node: {
-        id,
-        periodicalNumber,
-        symbol,
-        relativeAtomicWeight,
-        stableOxidationState,
-        rusName,
-        engName,
-        color,
-        hexColor,
-        group,
-        period,
-        atomicRadius,
-        radioactivity,
-      },
+  nodeToElement = ({
+    node: {
+      id,
+      periodicalNumber,
+      symbol,
+      relativeAtomicWeight,
+      stableOxidationState,
+      rusName,
+      engName,
+      color,
+      hexColor,
+      group,
+      period,
+      atomicRadius,
+      radioactivity,
     },
-    idx
-  ) => {
+  }) => {
     const isSemimetal = isSemimetalCheck(periodicalNumber)
     const isRadioactive = Boolean(Number(radioactivity))
     const isInversedColor = Number(color) === 2
@@ -78,31 +75,26 @@ class Table extends React.Component {
       periodicalNumber,
       group,
       period,
-    });
+    })
 
-		const isCustomElement = idx === undefined;
-    return (
-      <Element
-        key={id}
-        onClick={!isCustomElement && this.handleSelectElement(idx)}
-        periodicalNumber={periodicalNumber}
-        xPos={xPos}
-        yPos={yPos}
-        symbol={symbol}
-        mainName={rusName}
-        secondaryName={engName}
-        relativeAtomicWeight={weight}
-        stableOxidationState={oxidState}
-        hexColor={hexColor}
-        atomicRadius={atomicRadius}
-        isSemimetal={isSemimetal}
-        isLantanoid={isLantanoid}
-        isActinoid={isActinoid}
-        isInversedColor={isInversedColor}
-        isRadioactive={isRadioactive}
-        isCustomElement={isCustomElement}
-      />
-    )
+    return {
+      id,
+      periodicalNumber,
+      xPos,
+      yPos,
+      symbol,
+      mainName: rusName,
+      secondaryName: engName,
+      relativeAtomicWeight: weight,
+      stableOxidationState: oxidState,
+      hexColor,
+      atomicRadius,
+      isSemimetal,
+      isLantanoid,
+      isActinoid,
+      isInversedColor,
+      isRadioactive,
+    }
   }
 
   handleSelectElement = idx => () => {
@@ -115,13 +107,18 @@ class Table extends React.Component {
   render() {
     const { elements, sortColors } = this.props
     const { selectedElementIdx } = this.state
+    const selectedElementData = this.nodeToElement(elements[selectedElementIdx])
 
     return (
       <div className={styles.tableContainer}>
-        <Legend colorList={sortColors}>
-          {this.nodeToElementComponent(elements[selectedElementIdx])}
-        </Legend>
-        {elements.map(this.nodeToElementComponent)}
+        <Legend colorList={sortColors} element={selectedElementData} />
+        {elements.map(this.nodeToElement).map((data, idx) => (
+          <Element
+            {...data}
+            key={data.id}
+            onClick={this.handleSelectElement(idx)}
+          />
+        ))}
         <div
           className={classNames(styles.line, styles.light)}
           style={{
