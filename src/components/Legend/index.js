@@ -36,7 +36,7 @@ const getAtomicRadiusAnnotationSytles = element => {
   }
 }
 
-const Legend = ({ colorList, element }) => {
+const Legend = ({ colorList, element, onSelectSortOfElements }) => {
   console.log(element)
   const colors = generateColors(colorList)
   return (
@@ -167,14 +167,14 @@ const Legend = ({ colorList, element }) => {
       </div>
       <div className={styles.sortList}>
         {["s", "p", "d", "f"].map(sortName => {
-          const { id, hexColor } = colors[sortName]
+          const color = colors[sortName]
           return (
-            <div className={styles.sortItem}>
+            <div className={styles.sortItem} onMouseOver={() => onSelectSortOfElements(color.sort)} onMouseLeave={() => onSelectSortOfElements(null)} >
               <div
-                key={id}
+                key={color.id}
                 className={styles.sortColorBlock}
                 style={{
-                  background: generateBg(hexColor),
+                  background: generateBg(color.hexColor),
                 }}
               />
               <span className={styles.sortSign}>{sortName}</span>

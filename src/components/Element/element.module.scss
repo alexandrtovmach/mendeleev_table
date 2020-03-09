@@ -102,4 +102,8 @@ $atomicRadiusColorInversed: rgba(0, 0, 0, 0.6);
   &.actinium {
     width: calc(70px - 1px - #{$lantanoidsGapWidth});
   }
+
+	&.muted {
+		opacity: 0.5;
+	}
 }

@@ -84,6 +84,7 @@ $scaleQ: 2.5;
     .sort-item {
       display: flex;
       align-items: center;
+			padding: $spaceSize/6 0;
       .sort-sign {
         font-family: "Helvetica";
         font-weight: 700;

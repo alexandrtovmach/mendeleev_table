@@ -43,6 +43,7 @@ const getRelativeAtomicWeight = weight => {
 class Table extends React.Component {
   state = {
     selectedElementIdx: 32,
+    selectedSortOfElements: null,
   }
 
   nodeToElement = ({
@@ -55,6 +56,7 @@ class Table extends React.Component {
       rusName,
       engName,
       color,
+      sort,
       hexColor,
       group,
       period,
@@ -62,11 +64,13 @@ class Table extends React.Component {
       radioactivity,
     },
   }) => {
+    const { selectedSortOfElements } = this.state
     const isSemimetal = isSemimetalCheck(periodicalNumber)
     const isRadioactive = Boolean(Number(radioactivity))
     const isInversedColor = Number(color) === 2
     const isLantanoid = periodicalNumber >= 58 && periodicalNumber <= 71
     const isActinoid = periodicalNumber >= 90 && periodicalNumber <= 103
+    const isHiddenByFilter = selectedSortOfElements && selectedSortOfElements !== sort
     const weight = getRelativeAtomicWeight(relativeAtomicWeight)
     const oxidState = getOxidState(stableOxidationState)
     const { xPos, yPos } = getPosition({
@@ -94,6 +98,7 @@ class Table extends React.Component {
       isActinoid,
       isInversedColor,
       isRadioactive,
+      isHiddenByFilter,
     }
   }
 
@@ -104,6 +109,12 @@ class Table extends React.Component {
       })
   }
 
+  handleSelectSortOfElements = newVal => {
+		this.setState({
+			selectedSortOfElements: newVal,
+		})
+  }
+
   render() {
     const { elements, sortColors } = this.props
     const { selectedElementIdx } = this.state
@@ -111,7 +122,11 @@ class Table extends React.Component {
 
     return (
       <div className={styles.tableContainer}>
-        <Legend colorList={sortColors} element={selectedElementData} />
+        <Legend
+          colorList={sortColors}
+          element={selectedElementData}
+          onSelectSortOfElements={this.handleSelectSortOfElements}
+        />
         {elements.map(this.nodeToElement).map((data, idx) => (
           <Element
             {...data}

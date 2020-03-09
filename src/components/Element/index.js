@@ -23,6 +23,7 @@ const Element = ({
   isRadioactive,
   isInversedColor,
   isCustomElement,
+  isHiddenByFilter,
   onClick,
 }) => {
   return (
@@ -30,7 +31,8 @@ const Element = ({
       className={classNames(styles.elementContainer, {
         [styles.lanthanum]: !isCustomElement && Number(periodicalNumber) === 57,
         [styles.actinium]: !isCustomElement && Number(periodicalNumber) === 89,
-				[styles.custom]: isCustomElement
+				[styles.custom]: isCustomElement,
+				[styles.muted]: !isCustomElement && isHiddenByFilter
       })}
       style={{
         backgroundColor: hexColor,
